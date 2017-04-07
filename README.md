@@ -1,2 +1,21 @@
 # Angular2-Image-OR-Content-Slider
-A simple component to which accepts an array of image or content for sliding.
+A simple component which accepts an array of image or content for sliding.
+
+Basic Usage
+```typescript
+    @Component({
+        selector: 'ImageShow',
+        template: `
+        <contentSlider [slides]="images"></contentSlider>
+        `
+    })
+    export class ImageShowComponent implements  AfterViewInit{
+       images:Array<any> = [{"sType":"img","imgSrc":"..."},{"sType":"div","content":"...Hello It's slidable content"}];
+      constructor(){
+      }
+    }
+```
+
+For having a full understanding of source-code please see this article
+
+http://www.ravinderpayal.com/Simple-and-Light-Weight-Image-or-Content-Slider-for-Angular2/
