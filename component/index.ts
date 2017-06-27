@@ -1,4 +1,13 @@
 import { Component, ElementRef, Renderer, Input, Output, Optional, EventEmitter, ViewEncapsulation } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser'
+
+@Pipe({ name: 'safeHtml'})
+export class SafeHtmlPipe implements PipeTransform  {
+  constructor(private sanitized: DomSanitizer) {}
+  transform(value) {
+    return this.sanitized.bypassSecurityTrustHtml(value);
+  }
+}
 
 @Component({
     selector: 'contentSlider',
@@ -123,7 +132,7 @@ export class contentSlider {
 @Component({
     selector:"printSlide",
     template:`
-        <div *ngIf="meta.sType=='div'" innerHtml="meta.content">
+        <div *ngIf="meta.sType=='div'" [innerHtml]="meta.content | safeHtml">
 
         </div>
         <div *ngIf="meta.sType=='ajaxDiv'">
