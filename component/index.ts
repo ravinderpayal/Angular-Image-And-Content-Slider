@@ -1,3 +1,7 @@
+/**
+  * @Author Ravinder Payal<mail@ravinderpayal.com> (c) 2017
+  * License:- Open for any-usage/change/alteration, but first 4 lines of this file should remain intact. 
+  */
 import { Component, ElementRef, Renderer, Input, Output, Optional, EventEmitter, ViewEncapsulation } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser'
 
