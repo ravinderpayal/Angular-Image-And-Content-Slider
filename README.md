@@ -1,6 +1,22 @@
 # Angular2-Image-OR-Content-Slider
 A simple component which accepts an array of image or content for sliding.
 
+#How to install
+In app.odule.ts import `contentSlider`
+```typescript
+import {SafeHtmlPipe, contentSlider} from './path-to-content-slider-github-download';
+@NgModule({
+  declarations: [//-----,
+  SafeHtmlPipe,
+  contentSlider,
+  // ------],
+  imports: [
+  //------------
+  ],
+  //-----
+  });
+```
+
 Basic Usage
 ```typescript
     @Component({
