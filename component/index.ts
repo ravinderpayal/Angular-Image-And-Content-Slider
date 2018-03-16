@@ -146,7 +146,7 @@ export class contentSlider {
     `
 })
 export class printSlide{
-    @Input("meta") meta:any;
+    @Input() meta:any;
     constructor(){
 
     }
