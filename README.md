@@ -1,4 +1,4 @@
-# Angular2-Image-OR-Content-Slider
+# Angular-Image-OR-Content-Slider
 A simple component which accepts an array of image or content for sliding.
 
 #How to install
