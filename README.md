@@ -1,4 +1,4 @@
-# Angular-Image-OR-Content-Slider
+# Angular-Image-And-Content-Slider
 A simple component which accepts an array of image or content for sliding.
 
 #How to install
@@ -35,4 +35,4 @@ Basic Usage
 
 For having a full understanding of source-code please see this article
 
-http://www.ravinderpayal.com/Simple-and-Light-Weight-Image-or-Content-Slider-for-Angular2/
+http://www.ravinderpayal.com/Simple-and-Light-Weight-Image-or-Content-Slider-for-Angular/
